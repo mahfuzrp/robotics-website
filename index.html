@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+    <section class="header">
+
+        <div class="left">
+            <div class="logo">
+                <i class="fa-solid fa-robot"></i>
+                <div class="brand-name">
+                    <h1>ROBOTICS</h1>
+                    <h3>Learn about robot</h3>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="vertical-line"></div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">PRODUCTION</a></li>
+                    <li><a href="#">FACILITY</a></li>
+                    <li><a href="#">MECHANISM</a></li>
+                    <li><a href="#">OUT TEAM</a></li>
+                    <li><a href="#">OUT OUR IDEAS</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">TECHNOLOGY</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                </ul>
+            </div>
+
+            <div class="wrapper">
+                <h1>THE NEXT<br>GENERATION</h1>
+
+                <img class="robot-img" src="images/robo.png" alt="">
+            </div>
+            <h1 class="bg-text">ROBOTICS</h1>
+            <div class="mid-circle"></div>
+
+
+            <div class="mid-menu">
+                <div>
+                    <p>WATCH PREVIEW</p>
+                    <img src="images/play.png" alt="">
+                </div>
+                <div>
+                    <p>THE MAKING</p>
+                    <img src="images/settings.png" alt="">
+                </div>
+                <div>
+                    <p>DOWNLOAD PDF</p>
+                    <img src="images/download.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="bottom-number">
+                <small class="active">01</small>
+                <small>02</small>
+                <small>03</small>
+                <small>04</small>
+                <small>05</small>
+            </div>
+
+            <img src="images/volume.png" alt="" class="volume">
+        </div>
+
+    </section>
+
+    <div class="smallCursor"></div>
+    <div class="largeCursor"></div>
+
+
+    <script>
+        var smallCursor = document.querySelector('.smallCursor');
+        var largeCursor = document.querySelector('.largeCursor');
+
+        document.onmousemove = function(e){
+            smallCursor.style.left = (e.pageX - 5) + "px";
+            smallCursor.style.top = (e.pageY - 5) + "px";
+            smallCursor.style.display = "block";
+
+            
+            largeCursor.style.left = (e.pageX - 22) + "px";
+            largeCursor.style.top = (e.pageY - 22) + "px";
+            largeCursor.style.display = "block";
+        }
+    </script>
+</body>
+</html>

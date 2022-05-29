@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fredoka:wght@300&family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&family=Roboto+Slab:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Audiowide', cursive;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+
+/* -------------main style star here---------- */
+.header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.header .left{
+    flex-basis: 20%;
+    background: #002e52;
+    padding: 4% 3%;
+}
+.header .right{
+    flex-basis: 80%;
+    background: #000;
+}
+
+
+
+/* ----------------Style of Inner Left------------ */
+
+    /* ------Logo Style-------- */
+.left .logo{
+    display: flex;
+    align-items: center;
+    color: #3fc9f5;
+    cursor: pointer;
+    z-index: 10;
+}
+.left .logo i{
+    font-size: 30px;
+    margin-right: 5px;
+}
+.left .logo h1{
+    font-size: 25px;
+    font-weight: 600;
+    z-index: 10;
+}
+.left .logo h3{
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: -3px;
+    font-weight: 500;
+    color: #3fc8f596;
+}
+
+    /* ------Other's Style-------- */
+.search-box{
+    display: flex;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 7px 8px;
+    border-radius: 20px;
+}
+.search-box img{
+    width: 15px;
+    margin-right: 3px;
+    cursor: pointer;
+    z-index: 10;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #3fc9f5;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: Roboto;
+    z-index: 10;
+}
+.search-box input::placeholder{
+    font-weight: 500;
+    font-size: 13px;
+    font-family: Roboto;
+}
+
+
+.vertical-line{
+    width: 1px;
+    background-color: #797979;
+    height: 40vh;
+    margin-top: 15px;
+}
+
+.menu ul{
+    margin-top: 15px;
+    z-index: 10;
+}
+.menu ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    z-index: 10;
+}
+.left .menu ul li a{
+    text-decoration: none;
+    color: #797979;
+    font-size: 15px;
+    transition: all .3s ease-out;
+    font-family: monospace;
+    z-index: 10;
+    position: relative;
+}
+.left .menu ul li a:hover{
+    color: rgba(255, 255, 255, 0.812);
+}
+
+
+
+/* ----------------Style of Inner Right------------ */
+.right{
+    padding: 4.5%;
+}
+.right ul{
+    display: flex;
+}
+.right ul li{
+    list-style: none;
+    margin-right: 5%;
+}
+.right ul li a{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.801);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .3s ease-out;
+    z-index: 10;
+}
+.right ul li a:hover{
+    color: #fff;
+}
+.wrapper{
+    position: relative;
+}
+.wrapper h1{
+    font-size: 55px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.wrapper .robot-img{
+    width: 49%;
+    position: absolute;
+    right: 5%;
+    top: -50px;
+    z-index: 2;
+}
+.wrapper .robot-img img{
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* --------Background Low Opacity Text-------- */
+.bg-text{
+    position: absolute;
+    top: 173px;
+    right: 115px;
+    font-size: 100px;
+    color: #e2e2e2;
+    opacity: .2;
+    z-index: 1;
+}
+.mid-circle{
+    width: 200px;
+    height: 200px;
+    border: 30px solid #e2e2e2;
+    border-radius: 50%;
+    position: absolute;
+    left: 170px;
+    opacity: .2;
+}
+
+
+/* --------------Other's Option-------- */
+.mid-menu{
+    position: absolute;
+    right: 600px;
+    top: 350px;
+}
+
+.mid-menu div{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.mid-menu div:nth-child(1){
+    position: relative;
+    right: -10px;
+}
+.mid-menu div:nth-child(2){
+    position: relative;
+    right: -35px;
+}
+.mid-menu div:nth-child(3){
+    position: relative;
+    right: -20px;
+}
+.mid-menu p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.mid-menu img{
+    width: 35px;
+}
+
+
+.bottom-number{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+.bottom-number small{
+    margin-right: 20px;
+    border-bottom: 2px solid #e2e2e2ab;
+    color: #e2e2e2ab;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    transition-property: color, font-size;
+    z-index: 10;
+}
+.bottom-number small:hover{
+    color: #fff;
+    font-size: 17px;
+}
+.bottom-number small.active{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 17px;
+}
+
+.volume{
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+    width: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+/* ------------For Cursor Animation------- */
+.smallCursor{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3fc8f5be;
+    display: none;
+}
+.largeCursor{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #3fc8f5be;
+    display: none;
+
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+a,li{
+    z-index: 10;
+}
+
+/* ------
+----------- left-20%-color: #002e52;
+----------- vertical-line: #797979;
+----------- low-opacity: #e2e2e2;
+----------- Cursor: #3fc9f5;
+----- */
